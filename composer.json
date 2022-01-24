@@ -20,9 +20,30 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/block_visibility_groups": "^1.4",
+        "drupal/contact_emails": "^1.20",
+        "drupal/contact_storage": "^1.1",
+        "drupal/contact_tools": "^1.1",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/field_group": "^3.2",
+        "drupal/imagemagick": "^3.3",
+        "drupal/metatag": "^1.19",
+        "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.8",
+        "drupal/photoswipe": "^3.0",
+        "drupal/redirect": "^1.7",
+        "drupal/robotstxt": "^1.4",
+        "drupal/scheduler": "^1.4",
+        "drupal/snippet_manager": "^1.8",
+        "drupal/swiftmailer": "^2.2",
+        "drupal/tvi": "^1.0@RC",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/youtube": "^1.2",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
@@ -31,7 +52,29 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "oomphinc/composer-installers-extender": true,
+            "cweagans/composer-patches": true
+        }
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "rm -f web/robots.txt"
+        ]
     },
     "extra": {
         "drupal-scaffold": {
@@ -88,7 +131,15 @@
                 "      https://www.drupal.org/getting-involved",
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
-            ]
+            ],
+        "patches": {
+            "drupal/photoswipe": {
+                "view() error": "https://www.drupal.org/files/issues/photoswipe-caption-unset-2666636-3-D8.patch"
+            },
+            "drupal/tvi": {
+                "Route enhancer": "https://www.drupal.org/files/issues/2018-08-17/route_enhancer-2993234-3.patch"
+            }
+        }
         }
     }
 }
