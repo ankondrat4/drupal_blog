@@ -1,0 +1,19 @@
+uuid: ab508809-8709-4adf-afed-50d9f6b3ace9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.youtube
+id: paragraph.youtube.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: youtube
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

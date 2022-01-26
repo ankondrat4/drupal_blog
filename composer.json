@@ -33,6 +33,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^3.2",
         "drupal/imagemagick": "^3.3",
+        "drupal/markdown": "^3.0@RC",
         "drupal/metatag": "^1.19",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
@@ -45,6 +46,10 @@
         "drupal/tvi": "^1.0@RC",
         "drupal/twig_tweak": "^3.1",
         "drupal/youtube": "^1.2",
+        "erusev/parsedown": "^1.7",
+        "erusev/parsedown-extra": "^0.8.1",
+        "league/commonmark": "^2.2",
+        "michelf/php-markdown": "^1.9",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
@@ -53,6 +58,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
+        "platform-check": false,
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,

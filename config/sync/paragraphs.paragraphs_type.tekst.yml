@@ -1,0 +1,10 @@
+uuid: 562e0720-181f-4422-8826-4d054c4c22a1
+langcode: en
+status: true
+dependencies: {  }
+id: tekst
+label: Текст
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

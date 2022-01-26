@@ -1,0 +1,10 @@
+uuid: 6bcd3379-8e85-4ca0-acac-162031a8cfc9
+langcode: en
+status: true
+dependencies: {  }
+id: code
+label: 'Код '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

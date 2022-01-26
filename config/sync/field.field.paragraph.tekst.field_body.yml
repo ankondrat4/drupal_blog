@@ -1,0 +1,21 @@
+uuid: 9cc7af4a-0a6e-4bca-beaf-51b1bd50127c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.tekst
+  module:
+    - text
+id: paragraph.tekst.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: tekst
+label: Содержимое
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

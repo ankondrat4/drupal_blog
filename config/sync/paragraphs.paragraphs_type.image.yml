@@ -1,0 +1,10 @@
+uuid: 373b9907-7e27-4125-85a7-cb83a3773866
+langcode: en
+status: true
+dependencies: {  }
+id: image
+label: Изображение
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

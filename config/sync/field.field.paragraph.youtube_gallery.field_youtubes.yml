@@ -1,0 +1,21 @@
+uuid: 8a481653-a8ad-4f15-bcce-7178d170350a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_youtubes
+    - paragraphs.paragraphs_type.youtube_gallery
+  module:
+    - youtube
+id: paragraph.youtube_gallery.field_youtubes
+field_name: field_youtubes
+entity_type: paragraph
+bundle: youtube_gallery
+label: Youtube
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube
