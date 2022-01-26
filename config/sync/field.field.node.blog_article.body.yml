@@ -1,25 +1,23 @@
-uuid: 3304049d-3179-4dfb-ad57-aeae393642af
+uuid: c912113c-b2d8-41d8-a2c0-0e3a44fbbacf
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.blog_article
   module:
     - text
-_core:
-  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
-id: node.article.body
+id: node.blog_article.body
 field_name: body
 entity_type: node
-bundle: article
-label: Body
+bundle: blog_article
+label: Анонс
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary
