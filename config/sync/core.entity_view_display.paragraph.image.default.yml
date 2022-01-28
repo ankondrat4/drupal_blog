@@ -6,19 +6,16 @@ dependencies:
     - field.field.paragraph.image.field_image
     - field.field.paragraph.image.field_title
     - paragraphs.paragraphs_type.image
-  module:
-    - image
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
 mode: default
 content:
   field_image:
-    type: image
+    type: entity_reference_label
     label: above
     settings:
-      image_link: ''
-      image_style: ''
+      link: true
     third_party_settings: {  }
     weight: 1
     region: content

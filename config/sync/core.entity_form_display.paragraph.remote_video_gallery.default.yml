@@ -1,0 +1,24 @@
+uuid: 9f414993-c9ab-4c6b-938f-41565084cacd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.remote_video_gallery.field_remote_videos
+    - paragraphs.paragraphs_type.remote_video_gallery
+  module:
+    - media_library
+id: paragraph.remote_video_gallery.default
+targetEntityType: paragraph
+bundle: remote_video_gallery
+mode: default
+content:
+  field_remote_videos:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -48,7 +48,7 @@
         "drupal/youtube": "^1.2",
         "erusev/parsedown": "^1.7",
         "erusev/parsedown-extra": "^0.8.1",
-        "league/commonmark": "^2.2",
+        "league/commonmark": "^1.0",
         "michelf/php-markdown": "^1.9",
         "oomphinc/composer-installers-extender": "^2.0"
     },

@@ -1,9 +1,9 @@
-uuid: 237fcf4b-7001-45be-95c9-f125eb78c6f9
+uuid: d21b159a-672e-47cb-b87b-ffa8d814aea7
 langcode: en
 status: true
 dependencies: {  }
-id: youtube_gallery
-label: 'Галерея YouTube'
+id: remote_video
+label: 'Удаленное видео'
 icon_uuid: null
 icon_default: null
 description: ''

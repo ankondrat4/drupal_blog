@@ -1,20 +1,17 @@
-uuid: 6af61981-278f-44ac-b4de-ca5dd3953abb
+uuid: 7f072831-f708-4229-b6af-79d6c54f6105
 langcode: en
 status: true
 dependencies:
   module:
-    - file
+    - media
     - node
 id: node.field_attachments
 field_name: field_attachments
 entity_type: node
-type: file
+type: entity_reference
 settings:
-  target_type: file
-  display_field: true
-  display_default: false
-  uri_scheme: public
-module: file
+  target_type: media
+module: core
 locked: false
 cardinality: -1
 translatable: true
