@@ -1,0 +1,34 @@
+uuid: 527d4eab-4e67-43f0-928c-3550f7cf54ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - markdown
+name: Markdown2
+format: markdown2
+weight: -10
+filters:
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: -15
+    settings:
+      id: commonmark
+      enabled: true
+      render_strategy:
+        type: filter_output
+        custom_allowed_html: ''
+        plugins:
+          commonmark: true
+          commonmark-external-links: false
+          commonmark-footnotes: false
+          commonmark-heading-permalink: false
+          commonmark-strikethrough: false
+          commonmark-table: false
+          commonmark-task-list: false
+          filter_align: false
+          filter_caption: false
+          media_embed: false
+      override: false
+    filterFormat: null

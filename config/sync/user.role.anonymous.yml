@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.markdown2
     - filter.format.restricted_html
   module:
     - comment
@@ -22,5 +23,6 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
+  - 'use text format markdown2'
   - 'use text format restricted_html'
   - 'view media'
