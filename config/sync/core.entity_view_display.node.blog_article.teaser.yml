@@ -38,3 +38,4 @@ hidden:
   field_image: true
   field_paragraphs: true
   field_tags: true
+  langcode: true

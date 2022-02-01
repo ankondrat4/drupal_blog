@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.blog_article.body
     - field.field.node.blog_article.field_attachments
     - field.field.node.blog_article.field_comments
@@ -76,4 +77,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true
