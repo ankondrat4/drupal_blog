@@ -1,0 +1,5 @@
+name: Dlog
+type: module
+description: Core module for custom code, hooks and functions.
+package: dlog
+core_version_requirement: ^8.8 || ^9
