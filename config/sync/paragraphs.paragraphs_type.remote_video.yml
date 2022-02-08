@@ -1,10 +1,20 @@
 uuid: d21b159a-672e-47cb-b87b-ffa8d814aea7
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - dlog_paragraphs
 id: remote_video
 label: 'Удаленное видео'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  dlog_paragraphs_paragraph_class:
+    enabled: true
+  dlog_paragraphs_paragraph_style:
+    enabled: true
+  dlog_paragraphs_paragraph_title:
+    enabled: true
+  dlog_paragraphs_remote_video:
+    enabled: true

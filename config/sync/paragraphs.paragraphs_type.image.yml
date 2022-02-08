@@ -1,10 +1,18 @@
 uuid: 373b9907-7e27-4125-85a7-cb83a3773866
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - dlog_paragraphs
 id: image
 label: Изображение
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  dlog_paragraphs_paragraph_class:
+    enabled: true
+  dlog_paragraphs_paragraph_style:
+    enabled: true
+  dlog_paragraphs_paragraph_title:
+    enabled: true

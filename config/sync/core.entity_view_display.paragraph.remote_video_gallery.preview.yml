@@ -1,0 +1,23 @@
+uuid: 9e701439-b549-46e9-b701-f9908cf739f3
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.remote_video_gallery.field_remote_videos
+    - paragraphs.paragraphs_type.remote_video_gallery
+id: paragraph.remote_video_gallery.preview
+targetEntityType: paragraph
+bundle: remote_video_gallery
+mode: preview
+content:
+  field_remote_videos:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

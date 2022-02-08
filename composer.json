@@ -19,6 +19,7 @@
         }
     ],
     "require": {
+        "bower-asset/photoswipe": "^4.1",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
@@ -47,13 +48,15 @@
         "drupal/swiftmailer": "^2.2",
         "drupal/tvi": "^1.0@RC",
         "drupal/twig_tweak": "^3.1",
+        "drupal/video_embed_field": "^2.4",
         "drupal/youtube": "^1.2",
         "drush/drush": "^11.0",
         "erusev/parsedown": "^1.7",
         "erusev/parsedown-extra": "^0.8.1",
         "league/commonmark": "^1.0",
         "michelf/php-markdown": "^1.9",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "roave/better-reflection": "^5.0"
     },
     "conflict": {
         "drupal/drupal": "*"

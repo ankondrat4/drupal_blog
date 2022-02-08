@@ -1,10 +1,20 @@
 uuid: b42d8591-1b65-4a04-834d-148e804ee6fb
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - dlog_paragraphs
 id: image_and_text
 label: 'Изображение и текст'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  dlog_paragraphs_image_and_text:
+    enabled: true
+  dlog_paragraphs_paragraph_class:
+    enabled: true
+  dlog_paragraphs_paragraph_style:
+    enabled: true
+  dlog_paragraphs_paragraph_title:
+    enabled: true
