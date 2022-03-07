@@ -1,0 +1,5 @@
+name: Dlog Hero
+type: module
+description: Custom page title.
+package: dlog
+core_version_requirement: ^8.8 || ^9

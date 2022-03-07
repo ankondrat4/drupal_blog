@@ -27,6 +27,7 @@ module:
   devel: 0
   devel_kint_extras: 0
   dlog: 0
+  dlog_hero: 0
   dlog_paragraphs: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
@@ -81,7 +82,9 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  vem_migrate_oembed: 0
   video_embed_field: 0
+  video_embed_media: 0
   views_ui: 0
   youtube: 0
   pathauto: 1

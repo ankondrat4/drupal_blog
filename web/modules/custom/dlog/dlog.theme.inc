@@ -6,7 +6,7 @@
  */
 
 /**
- * Implements template_preprocess_HOOK() for dlog_previous_next.html.twig
+ * Implements template_preprocess_HOOK() for dlog-previous-next.html.twig
  */
 function template_preprocess_dlog_previous_next(&$variables){
   /** @var \Drupal\Core\Entity\EntityInterface $entity   */
